@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity"
+    >
+
+    <EditText
+        android:id="@+id/et_main_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="아이디"
+        app:backgroundTint = "@null"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
+<!--인풋타입 패스워드  그 조절해서 매치의끝이 어딘지조절하는것도 하기 -->
+    <EditText
+        android:id="@+id/et_main_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="패스워드"
+        android:paddingStart="12dp"
+        app:backgroundTint = "@null"
+        android:paddingEnd="12dp"
+        android:layout_marginBottom="270dp"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_main_id" />
+
+    <Button
+        android:id="@+id/et_main_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:text="로그인"
+        android:background="@drawable/btn_main_background"
+        android:layout_marginBottom="230dp"
+        android:layout_marginStart="5dp"
+        app:backgroundTint = "@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_main_pwd" />
+
+    <TextView
+        android:id="@+id/txt_explin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:text="회원가입하기"
+        android:textColor="#A8A8A8"
+        android:visibility="visible"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint = "@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_main_login" />
+
+    <TextView
+        android:id="@+id/txt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="150dp"
+        android:text="아직회원이아니신가요?"
+        app:backgroundTint = "@null"
+        android:textColor="#A8A8A8"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_main_login" />
+
+        <!--왼쪽마진이 마진 스타트, 오른쪽이 마진엔드, 위가톱, 아래가 바텀 웹이아니다!!!
+         가로는 마진호리존탈, 세로는 마진버티칼, 비번의 위 한계는 아이디로 해주면된다!!!
+          안의 간격은 패딩!! 아이디란 텍스트와 에딧텍스트 간의 간격 필요-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
